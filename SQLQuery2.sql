@@ -29,3 +29,8 @@ insert into AddressBook values
 update AddressBook set city='Kolar' where firstname='Shashi'
 
 select * from AddressBook
+
+--UC5-Delete Person details
+
+delete from AddressBook where firstname='Akshata'
+select * from AddressBook
