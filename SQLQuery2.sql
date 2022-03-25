@@ -20,7 +20,12 @@ select * from AddressBook;
 --UC3-Inserting Contacts
 insert into AddressBook values
 ('Shashi','M','2nd cros Rajaji Nagar','Banglore','Karnataka','58082','8123351458','Shashi@gmail.com'),
-('Ravi','M','3nd cros Jaya Nagar','Ahmadabad','Gujarat','587682','934747358','Ravi@gmail.com'),
-('Akshata','F','4nd cros Indira Nagar','Pune','MH','80534','1234567896','Akshi@gmail.com'),
+('Ravi','M','3rd cros Jaya Nagar','Ahmadabad','Gujarat','587682','934747358','Ravi@gmail.com'),
+('Akshata','F','4th cros Indira Nagar','Pune','MH','80534','1234567896','Akshi@gmail.com'),
 ('Porvi','F','2nd cros Rajaji Nagar','Hyderabad','Andra','80453','0987654321','Porvi@gmail.com'),
 ('Raja','hsjs','2nd cros Rajaji Nagar','Tirupathi','Andra','80453','0987654321','Raja@gmail.com');
+
+--UC4-Edit Existing Contact
+update AddressBook set city='Kolar' where firstname='Shashi'
+
+select * from AddressBook
