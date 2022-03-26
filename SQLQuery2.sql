@@ -43,3 +43,10 @@ select COUNT(firstname) from AddressBook where city = 'Banglore' or state = 'Kar
 
 --UC8-Sort Names For Given City or State
 select * from AddressBook where city = 'Banglore' order by firstname
+
+--UC9-Address Book Names and Type
+alter table AddressBook add Addressbookname varchar(20), type varchar(10)
+update AddressBook set Addressbookname='book1', type='Friends' where city='Bangalore'
+update AddressBook set Addressbookname='book2', type='Family' where city='Ahmadabad'
+update AddressBook set Addressbookname='book4', type='Profession' where city='Tirupathi'
+
