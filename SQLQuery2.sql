@@ -38,3 +38,6 @@ select * from AddressBook
 --UC6-Retrieve Person Belonging City or State
 select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
 
+--UC7-Count Person belonging to state and city
+select COUNT(firstname) from AddressBook where city = 'Banglore' or state = 'Karnataka'
+
