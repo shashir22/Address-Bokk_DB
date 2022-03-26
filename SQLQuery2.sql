@@ -55,3 +55,8 @@ select count(type) as 'family' from AddressBook where type='family'
 select count(type) as 'friends' from AddressBook where type='friends'
 select count(type) as 'profession' from AddressBook where type='profession'
 
+--UC11 Add Persons to Family and Freinds
+select * from AddressBook
+insert into AddressBook values
+('Karthik','Gowda','House no 212','Mysore','Karnataka',785575,'8748892361','Karthik@gmail.com','book2','Friends');
+
