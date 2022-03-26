@@ -34,3 +34,7 @@ select * from AddressBook
 
 delete from AddressBook where firstname='Akshata'
 select * from AddressBook
+
+--UC6-Retrieve Person Belonging City or State
+select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
+
