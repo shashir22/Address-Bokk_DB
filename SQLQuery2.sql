@@ -41,3 +41,5 @@ select firstname from AddressBook where city = 'Banglore' OR state = 'Karnataka'
 --UC7-Count Person belonging to state and city
 select COUNT(firstname) from AddressBook where city = 'Banglore' or state = 'Karnataka'
 
+--UC8-Sort Names For Given City or State
+select * from AddressBook where city = 'Banglore' order by firstname
